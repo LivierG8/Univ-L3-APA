@@ -12,20 +12,27 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Création des variables de la classe
     private String type;
+    EditText userText;
+    EditText passText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Initialisation des boutons et variables à la création de la classe
         Button connexion = (Button) findViewById(R.id.button);
+        userText = (EditText) findViewById(R.id.editTextUsername);
+        passText = (EditText) findViewById(R.id.editTextPassword);
     }
 
     public void validationConnexion (View v) {
-        EditText userText = (EditText) findViewById(R.id.editTextUsername);
-        EditText passText = (EditText) findViewById(R.id.editTextPassword);
+        // Pour des fins de test d'interface, j'ai ajouté cette variable pour sélectionner l'interface à afficher
+        type = "parcours";
 
+        // Cette validation des identifiants est à but de test uniquement, je n'ai pas eu le temps d'implémenter SQLite Rooms
         if (userText.getText().toString().equals("client") && passText.getText().toString().equals("passe")) {
             if (type.equals("parcours")) {
                 Intent intent = new Intent (this, Generale.class);

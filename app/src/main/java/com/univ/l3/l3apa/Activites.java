@@ -15,6 +15,7 @@ public class Activites extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activites2);
 
+        // Insertion du calendrier
         WeekView mWeekView = (WeekView) findViewById(R.id.weekView);
     }
 }

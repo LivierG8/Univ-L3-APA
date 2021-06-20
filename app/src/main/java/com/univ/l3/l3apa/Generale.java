@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class Generale extends AppCompatActivity {
 
+    // Création des variables nécessaires
     private ArrayList<String> ListeActivites;
     ListView listeParcours;
     ParcoursAdapter adapter;
@@ -26,12 +27,14 @@ public class Generale extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         activitesParDefaut();
 
+        // Recherche de la vue de liste
         listeParcours = (ListView) findViewById(R.id.listeParcours);
         adapter = new ParcoursAdapter();
 
         setContentView(R.layout.activity_generale);
     }
 
+    // Initialisation des activités par défaut car je n'ai pas pu implémenter SQLite
     private void activitesParDefaut() {
         ListeActivites = new ArrayList<String>();
         ListeActivites.add("Activité 1");
@@ -39,6 +42,7 @@ public class Generale extends AppCompatActivity {
         ListeActivites.add("Activité 3");
     }
 
+    // Affiche la vue de l'activité sélectionnée
     public void voirActivite(View v, String act) {
         Intent i = new Intent(this, Activites.class);
         i.putExtra("Test", act);
