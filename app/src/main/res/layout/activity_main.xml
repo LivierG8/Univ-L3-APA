@@ -37,8 +37,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Saisissez votre nom d'utilisateur" />
+            android:hint="Saisissez votre nom d'utilisateur"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textViewPassword"
@@ -54,8 +54,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="center"
-            android:inputType="textPersonName"
-            android:text="Saisissez votre mot de passe" />
+            android:hint="Saisissez votre mot de passe"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button"
