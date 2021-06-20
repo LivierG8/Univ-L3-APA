@@ -6,8 +6,11 @@ import android.os.Bundle;
 
 import com.alamkanak.weekview.WeekView;
 
+// L'affichage du calendrier semble faire planter l'application
+// Lorsque dans MainActivity je mets "texte" à "activite", l'application se ferme
 public class Activites extends AppCompatActivity {
 
+    //Récupération du numéro d'activité'
     String act = getIntent().getStringExtra("Test");
 
     @Override

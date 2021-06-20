@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+// Je ne parviens pas à faire s'afficher les différents éléments devant remplir les listes, il y a donc bien le module de liste mais aucun item
 public class Generale extends AppCompatActivity {
 
     // Création des variables nécessaires
